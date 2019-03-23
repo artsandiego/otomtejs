@@ -1,0 +1,70 @@
+{
+  "name": "otomtejs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "oto": "cross-env NODE_ENV=development webpack-dev-server",
+    "oto:dev": "npm run oto:development",
+    "oto:development": "cross-env NODE_ENV=development webpack --hide-modules",
+    "oto:prod": "npm run oto:production",
+    "oto:production": "cross-env NODE_ENV=production webpack --hide-modules",
+    "oto:vue": "npm uninstall react react-dom react-router-dom --save-dev && npm install vue vue-template-compiler --save-dev && cross-env NODE_ENV=vue node ./config/presets.js",
+    "oto:react": "npm uninstall vue vue-template-compiler --save-dev && npm install react react-dom react-router-dom --save-dev && cross-env NODE_ENV=react node ./config/presets.js",
+    "oto:bulma": "cross-env NODE_ENV=bulma node ./config/frontend.js",
+    "oto:bootstrap": "cross-env NODE_ENV=bootstrap node ./config/frontend.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artisawesm/otomtejs.git"
+  },
+  "keywords": [
+    "Automation",
+    "React",
+    "Vue",
+    "JavaScript",
+    "PWA",
+    "SPA",
+    "SEO",
+    "Boilerplate"
+  ],
+  "author": "Art San Diego <asd.artsandiego@gmail.com> (https://artisawesm.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artisawesm/otomtejs/issues"
+  },
+  "homepage": "https://github.com/artisawesm/otomtejs#readme",
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.4.9",
+    "axios": "^0.18.0",
+    "babel-loader": "^8.0.5",
+    "bootstrap": "^4.3.1",
+    "bulma": "^0.7.4",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.0",
+    "cssnano": "^4.1.10",
+    "extract-loader": "^3.1.0",
+    "fs-extra": "^7.0.1",
+    "hot-module-replacement": "^3.0.3",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.3.1",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "popper.js": "^1.14.7",
+    "postcss-loader": "^3.0.0",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "react-router-dom": "^5.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "vue-loader": "^15.7.0",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  }
+}

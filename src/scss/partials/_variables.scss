@@ -1,0 +1,13 @@
+// fonts
+@font-face {
+  font-family: 'bebasregular';
+  src: url('../fonts/bebas-webfont.woff') format('woff'),
+    url('../fonts/bebas-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+$regular: 'bebasregular';
+
+// colors
+$primary: #17161d;
+$secondary: white;
