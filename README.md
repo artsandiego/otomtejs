@@ -1,1 +1,3 @@
-# otomtejs
+# Otomte JS
+
+And yet another automation tool.
