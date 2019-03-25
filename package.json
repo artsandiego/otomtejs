@@ -1,6 +1,6 @@
 {
   "name": "otomtejs",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "The toolkit that automates code optimization and framework setup for your front end projects on the web.",
   "main": "index.js",
   "scripts": {
