@@ -1,18 +1,17 @@
 {
   "name": "otomtejs",
   "version": "0.1.2",
-  "description": "",
+  "description": "The toolkit that automates code optimization and framework setup for your front end projects on the web.",
   "main": "index.js",
   "scripts": {
+    "oto:setup": "npm install",
     "oto": "cross-env NODE_ENV=development webpack-dev-server",
     "oto:dev": "npm run oto:development",
     "oto:development": "cross-env NODE_ENV=development webpack --hide-modules",
     "oto:prod": "npm run oto:production",
     "oto:production": "cross-env NODE_ENV=production webpack --hide-modules",
     "oto:vue": "npm uninstall react react-dom react-router-dom --save-dev && npm install vue vue-template-compiler --save-dev && cross-env NODE_ENV=vue node ./config/presets.js",
-    "oto:react": "npm uninstall vue vue-template-compiler --save-dev && npm install react react-dom react-router-dom --save-dev && cross-env NODE_ENV=react node ./config/presets.js",
-    "oto:bulma": "cross-env NODE_ENV=bulma node ./config/frontend.js",
-    "oto:bootstrap": "cross-env NODE_ENV=bootstrap node ./config/frontend.js"
+    "oto:react": "npm uninstall vue vue-template-compiler --save-dev && npm install react react-dom react-router-dom --save-dev && cross-env NODE_ENV=react node ./config/presets.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +25,9 @@
     "PWA",
     "SPA",
     "SEO",
-    "Boilerplate"
+    "Boilerplate",
+    "SCSS",
+    "Webpack4"
   ],
   "author": "Art San Diego <asd.artsandiego@gmail.com> (https://artisawesm.com/)",
   "license": "MIT",
