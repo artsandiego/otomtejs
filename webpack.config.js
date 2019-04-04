@@ -4,6 +4,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const sourceMap = true;
 
 module.exports = {
   entry: {
@@ -47,6 +48,10 @@ module.exports = {
           },
           {
             loader: 'postcss-loader',
+          },
+          {
+            loader: 'group-css-media-queries-loader',
+            options: { sourceMap },
           },
           {
             loader: 'sass-loader',

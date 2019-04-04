@@ -1,5 +1,7 @@
+@import './partials/responsive';
 @import '~bootstrap/scss/bootstrap';
 @import './partials/variables';
+@import './partials/responsive';
 
 .oto-container {
   background-color: $primary;
