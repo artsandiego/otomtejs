@@ -11,7 +11,10 @@
     "oto:prod": "npm run oto:production",
     "oto:production": "cross-env NODE_ENV=production webpack --hide-modules",
     "oto:vue": "npm uninstall react react-dom react-router-dom --save-dev && npm install vue vue-template-compiler --save-dev && cross-env NODE_ENV=vue node ./config/presets.js",
-    "oto:react": "npm uninstall vue vue-template-compiler --save-dev && npm install react react-dom react-router-dom --save-dev && cross-env NODE_ENV=react node ./config/presets.js"
+    "oto:react": "npm uninstall vue vue-template-compiler --save-dev && npm install react react-dom react-router-dom --save-dev && cross-env NODE_ENV=react node ./config/presets.js",
+    "oto:wp-setup": "cross-env NODE_ENV=wp node ./config/presets.js",
+    "oto:wp-dev": "cross-env NODE_ENV=development webpack --watch --hide-modules",
+    "oto:wp-prod": "cross-env NODE_ENV=production webpack --hide-modules"
   },
   "repository": {
     "type": "git",
@@ -58,8 +61,8 @@
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "popper.js": "^1.14.7",
     "postcss-loader": "^3.0.0",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",

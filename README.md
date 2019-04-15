@@ -6,7 +6,7 @@ And yet another automation tool. 🤖
 
 > ## Otomte JS is now on beta!
 >
-> I've made a similar tool called [initializr](https://github.com/artisawesm/initializr), unfortunately it will be deprecated soon. 😩
+> OtomteJS is the successor of [initializr](https://github.com/artisawesm/initializr).
 
 # It's dangerous to go out alone! take Otomte JS
 
@@ -24,6 +24,7 @@ The cloned/installed repo will have the following files and directories.
 │   └── config/
 │       ├── react-config/
 │       ├── vue-config/
+│       ├── wp-config/
 │       └── preset.js
 ├── dist/
 │   ├── assets/
@@ -53,6 +54,14 @@ Type `npm run` followed by the command. i.e. `npm run oto`.
 4. `oto:prod` : Bundles JS and CSS for production.
 5. `oto:vue` : Use Vue as your primary JavaScript framework.
 6. `oto:react` (**default**) : Use React as your primary JavaScript framework.
+
+# OtomteJS ❤️ WordPress!
+
+You can now use OtomteJS as a WordPress theme. **This feature is still in development**, it's not a fully functional WordPress theme yet, but hopefully this can help you bootstrap your own custom WordPress theme.
+
+1. `oto:wp-setup` : Set your environment to be a WordPress theme compatible.
+2. `oto:wp-dev` : Run OtomteJS on WordPress.
+3. `oto:wp-prod` : Production build of the OtomteJS theme.
 
 # Thank you!
 

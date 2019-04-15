@@ -3,7 +3,7 @@
 @import './partials/variables';
 @import './partials/responsive';
 
-.oto-container {
+.oto_container {
   background-color: $primary;
   height: 100vh;
   width: 100%;
@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  .oto-logo {
+  .oto_logo {
     height: auto;
     width: 25%;
   }

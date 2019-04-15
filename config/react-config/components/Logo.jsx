@@ -5,7 +5,7 @@ class Logo extends Component {
     return (
       <React.Fragment>
         <img
-          className='oto-logo'
+          className='oto_logo'
           src='./assets/svg/oto.svg'
           alt='Otomte Brand'
         />
