@@ -14,7 +14,7 @@ function oto_widget() {
   );
   register_sidebar($args);
 }
-add_action('wigets_init', 'oto_widget');
+add_action('widgets_init', 'oto_widget');
 
 /* 
 * thumbnail setup
