@@ -2,15 +2,17 @@
 
 Building the web with austere simplicity. 🤖
 
-> Otomte JS is the successor of [initializr](https://github.com/artisawesm/initializr) (deprecated).
+> Otomte JS is the successor of [initializr](https://github.com/crtved/initializr) (deprecated).
 
 ## Status
 
-[![npm](https://img.shields.io/npm/v/otomtejs.svg?style=flat-square)](https://www.npmjs.com/package/otomtejs) [![npm](https://img.shields.io/npm/dm/otomtejs.svg?style=flat-square)](https://npmcharts.com/compare/otomtejs) [![NpmLicense](https://img.shields.io/npm/l/otomtejs.svg?style=flat-square)](https://github.com/artisawesm/otomtejs/blob/master/LICENSE) ![Travis (.org)](https://img.shields.io/travis/artisawesm/otomtejs.svg?style=flat-square) ![David](https://img.shields.io/david/dev/artisawesm/otomtejs.svg?style=flat-square)
+![Travis(.org)](https://img.shields.io/travis/crtved/otomtejs.svg?style=flat-square) [![npm](https://img.shields.io/npm/dm/otomtejs.svg?style=flat-square)](https://npmcharts.com/compare/otomtejs) [![npm](https://img.shields.io/npm/v/otomtejs.svg?style=flat-square)](https://www.npmjs.com/package/otomtejs) [![NpmLicense](https://img.shields.io/npm/l/otomtejs.svg?style=flat-square)](https://github.com/crtved/otomtejs/blob/master/LICENSE) 
+[![install size](https://packagephobia.now.sh/badge?p=otomtejs)](https://packagephobia.now.sh/result?p=otomtejs)
+
 
 ## Getting Otomte JS
 You can either clone the Otomte JS from github or install using npm.
-- Clone Otomte JS: `git clone https://github.com/artisawesm/otomtejs.git`
+- Clone Otomte JS: `git clone https://github.com/crtved/otomtejs.git`
 - Install using [npm](https://www.npmjs.com/): `npm i otomtejs`
 
 ## How to use Otomte JS
@@ -85,4 +87,4 @@ You will find the following files and directories under Otomte JS.
 ```
 ## Thank you for using Otomte JS!
 
-💻 with ❤️ by [Art](https://dev.to/artisawesm)
+💻 with ❤️ by [Art](https://dev.to/crtved)
