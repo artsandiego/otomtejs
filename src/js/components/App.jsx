@@ -1,19 +1,22 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
-// components
-import Logo from './Logo';
+const App = () => {
+  const [logoPath, setLogoPath] = useState('');
+  const [name, setName] = useState('');
 
-class App extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <Logo />
-      </React.Fragment>
-    );
-  }
-}
+  useEffect(() => {
+    setName('Otomte JS');
+    setLogoPath('./assets/svg/oto.svg');
+  }, []);
+
+  return (
+    <React.Fragment>
+      <img className="oto_logo" src={logoPath} alt={name} />
+      <h1>{name}</h1>
+    </React.Fragment>
+  );
+};
 
 export default App;
-
 ReactDOM.render(<App />, document.getElementById('app'));

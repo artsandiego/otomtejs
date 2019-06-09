@@ -1,23 +1,63 @@
 # Otomte JS
 
-And yet another automation tool. 🤖
+Building the web with austere simplicity. 🤖
+
+> Otomte JS is the successor of [initializr](https://github.com/artisawesm/initializr) (deprecated).
+
+## Status
 
 [![npm](https://img.shields.io/npm/v/otomtejs.svg?style=flat-square)](https://www.npmjs.com/package/otomtejs) [![npm](https://img.shields.io/npm/dm/otomtejs.svg?style=flat-square)](https://npmcharts.com/compare/otomtejs) [![NpmLicense](https://img.shields.io/npm/l/otomtejs.svg?style=flat-square)](https://github.com/artisawesm/otomtejs/blob/master/LICENSE) ![Travis (.org)](https://img.shields.io/travis/artisawesm/otomtejs.svg?style=flat-square) ![David](https://img.shields.io/david/dev/artisawesm/otomtejs.svg?style=flat-square)
 
-> ## Otomte JS is now on beta!
->
-> OtomteJS is the successor of [initializr](https://github.com/artisawesm/initializr).
-
-# It's dangerous to go out alone! take Otomte JS
-
-Now, choose your path.
-
-- Clone the repo: `git clone https://github.com/artisawesm/otomtejs.git`
+## Getting Otomte JS
+You can either clone the Otomte JS from github or install using npm.
+- Clone Otomte JS: `git clone https://github.com/artisawesm/otomtejs.git`
 - Install using [npm](https://www.npmjs.com/): `npm i otomtejs`
 
-# Here's the map
+## How to use Otomte JS
 
-The cloned/installed repo will have the following files and directories.
+### Install all dev environment dependencies: 
+
+``` 
+npm run oto:setup  
+```
+### Initialize Otomte JS.
+```
+npm run oto
+```
+### Compiles in development.
+```
+npm run oto:dev
+```
+### Bundles JS and CSS for production.
+```
+npm run oto:prod
+```
+### Switching default JavaScript framework.
+```
+npm run oto:vue
+npm run oto:react <- default
+```
+
+## Otomte JS ❤️ WordPress!
+> This feature is still in development.
+You can use Otomte JS in your WordPress website by adding it as a custom theme! Clone Otomte JS under `wp-content/themes/` and `cd` to the cloned folder.
+ 
+## Getting Started
+### Set Ototme JS as a WordPress theme.
+```
+npm run oto:wp-setup
+```
+### Initialize Otomte Js on WordPress.
+```
+npm run oto:wp-dev
+```
+### Build Otomte JS for production.
+```
+npm run oto:wp-prod
+```
+
+## Structure
+You will find the following files and directories under Otomte JS.
 
 ```
 ├── otomtejs
@@ -43,28 +83,6 @@ The cloned/installed repo will have the following files and directories.
     │   └── app.scss
     └── index.html
 ```
+## Thank you for using Otomte JS!
 
-# How Otomte JS works?
-
-Type `npm run` followed by the command. i.e. `npm run oto`.
-
-1. `oto:setup` : This will install all the required dependencies.
-2. `oto` : Initialize Ototmte JS.
-3. `oto:dev` : Compile in development (Best for debugging).
-4. `oto:prod` : Bundles JS and CSS for production.
-5. `oto:vue` : Use Vue as your primary JavaScript framework.
-6. `oto:react` (**default**) : Use React as your primary JavaScript framework.
-
-# OtomteJS ❤️ WordPress!
-
-You can now use OtomteJS as a WordPress theme. **This feature is still in development**, it's not a fully functional WordPress theme yet, but hopefully this can help you bootstrap your own custom WordPress theme.
-
-1. `oto:wp-setup` : Set your environment to be a WordPress theme compatible.
-2. `oto:wp-dev` : Run OtomteJS on WordPress.
-3. `oto:wp-prod` : Production build of the OtomteJS theme.
-
-# Thank you!
-
-It all started as a simple solution to help my personal development issues, now I've created a tool that can also help my fellow developers in their development workflow. 🎉
-
-</> with ❤️ by [Art](https://dev.to/artisawesm)
+💻 with ❤️ by [Art](https://dev.to/artisawesm)

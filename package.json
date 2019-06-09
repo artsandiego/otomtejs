@@ -1,7 +1,7 @@
 {
   "name": "otomtejs",
   "version": "0.1.7",
-  "description": "The toolkit that automates code optimization and framework setup for your front end projects on the web.",
+  "description": "Building the web with austere simplicity.",
   "main": "index.js",
   "scripts": {
     "oto:setup": "npm install",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/artisawesm/otomtejs.git"
+    "url": "git+https://github.com/crtved/otomtejs.git"
   },
   "keywords": [
     "Automation",
@@ -30,23 +30,22 @@
     "SEO",
     "Boilerplate",
     "SCSS",
-    "Webpack4"
+    "Webpack4",
+    "Wordpress"
   ],
-  "author": "Art San Diego <asd.artsandiego@gmail.com> (https://artisawesm.com/)",
+  "author": "Art San Diego <crtved.artsandiego@gmail.com> (https://artisawesm.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/artisawesm/otomtejs/issues"
+    "url": "https://github.com/crtved/otomtejs/issues"
   },
-  "homepage": "https://github.com/artisawesm/otomtejs#readme",
+  "homepage": "https://github.com/crtved/otomtejs#readme",
   "devDependencies": {
-    "@babel/core": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "autoprefixer": "^9.5.1",
-    "axios": "^0.18.0",
     "babel-loader": "^8.0.6",
-    "bootstrap": "^4.3.1",
-    "bulma": "^0.7.4",
+    "chalk": "^2.4.2",
     "cross-env": "^5.2.0",
     "css-loader": "^2.1.1",
     "cssnano": "^4.1.10",
@@ -55,21 +54,28 @@
     "group-css-media-queries-loader": "^3.0.2",
     "hot-module-replacement": "^3.0.3",
     "html-webpack-plugin": "^3.2.0",
-    "jquery": "^3.4.1",
+    "inquirer": "^6.3.1",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
-    "popper.js": "^1.15.0",
     "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.1.3",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.5.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "commander": "^2.20.0",
+    "jquery": "^3.4.1",
+    "ora": "^3.4.0",
+    "popper.js": "^1.15.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "uglifyjs-webpack-plugin": "^2.1.2",
-    "vue-loader": "^15.7.0",
-    "webpack": "^4.31.0",
-    "webpack-cli": "^3.3.2",
-    "webpack-dev-server": "^3.3.1"
+    "vue-loader": "^15.7.0"
   }
 }
