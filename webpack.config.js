@@ -3,13 +3,11 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const sourceMap = true;
 
 module.exports = {
   entry: {
     main: './src/js/index.js',
-    // bootstrap: bootstrap,
   },
   output: {
     filename: './assets/js/app.js',
@@ -48,6 +46,9 @@ module.exports = {
           },
           {
             loader: 'postcss-loader',
+            options: {
+              plugins: () => [require('autoprefixer')],
+            },
           },
           {
             loader: 'group-css-media-queries-loader',
@@ -63,6 +64,9 @@ module.exports = {
       },
     ],
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
   devtool: 'inline-source-map',
   performance: {
@@ -73,17 +77,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'assets/css/app.css',
       publicPath: '/',
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-      minify: {
-        collapseWhitespace: true,
-        removeComments: true,
-        removeRedundantAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
-        useShortDoctype: true,
-      },
     }),
   ],
   optimization: {
