@@ -4,7 +4,7 @@ Building the web with austere simplicity. 🤖
 
 > Otomte JS is the successor of [initializr](https://github.com/crtved/initializr) (deprecated).
 
-## Status
+## Package Status
 
 ![Travis(.org)](https://img.shields.io/travis/crtved/otomtejs.svg?style=flat-square) [![npm](https://img.shields.io/npm/dm/otomtejs.svg?style=flat-square)](https://npmcharts.com/compare/otomtejs) [![npm](https://img.shields.io/npm/v/otomtejs.svg?style=flat-square)](https://www.npmjs.com/package/otomtejs) [![NpmLicense](https://img.shields.io/npm/l/otomtejs.svg?style=flat-square)](https://github.com/crtved/otomtejs/blob/master/LICENSE) 
 [![install size](https://packagephobia.now.sh/badge?p=otomtejs)](https://packagephobia.now.sh/result?p=otomtejs)
