@@ -69,9 +69,9 @@ npm run oto:react <- default
 npm run oto:wp-setup
 ```
 
-### Initialize Otomte Js on WordPress.
-
 > <span style="color: red;">**WARNING:**</span> Once everything is set up properly and you have a WordPress website running on Otomte theme, then you <span style="color: red;">**DO NOT**</span> want to run **`npm run oto:wp-setup`**, you'll end up starting from the scratch again, and possibly break your build. You only need to run **`npm run oto:wp-setup`** <span style="color: green;">**ONCE**</span> to prevent unwanted result.
+
+### Initialize Otomte Js on WordPress.
 
 ```
 npm run oto:wp-dev
