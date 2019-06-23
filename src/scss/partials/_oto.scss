@@ -1,20 +1,26 @@
-.oto_container {
-  background-color: $primary;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  .oto_logo {
-    height: 50%;
-    width: 50%;
-  }
-  h1 {
-    font-family: $regular, Arial, Helvetica, sans-serif;
-    font-size: 3em;
-    color: $secondary;
-    letter-spacing: 30px;
-    margin: 1em;
+.oto {
+  &_container {
+    background-color: $primary;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &_logo {
+      height: 50%;
+      width: 50%;
+    }
+    &_title {
+      @include break(mobile) {
+        font-size: 2em;
+        letter-spacing: 20px;
+      }
+      font-family: $regular, Arial, Helvetica, sans-serif;
+      font-size: 3em;
+      color: $secondary;
+      letter-spacing: 30px;
+      margin: 1em;
+    }
   }
 }

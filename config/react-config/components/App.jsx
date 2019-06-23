@@ -12,8 +12,8 @@ const App = () => {
 
   return (
     <React.Fragment>
-      <img className="oto_logo" src={logoPath} alt={name} />
-      <h1>{name}</h1>
+      <img className="oto_container_logo" src={logoPath} alt={name} />
+      <h1 className="oto_container_title">{name}</h1>
     </React.Fragment>
   );
 };

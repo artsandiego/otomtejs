@@ -3,7 +3,6 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-const sourceMap = true;
 
 module.exports = {
   entry: {
@@ -15,13 +14,17 @@ module.exports = {
   },
   module: {
     rules: [
-      // vue
+      /*
+       * VUE
+       */
       {
         test: /\.vue$/,
         exclude: /node_modules/,
         loader: 'vue-loader',
       },
-      // js
+      /*
+       * JavaScript / JSX / VUE
+       */
       {
         test: /\.jsx?/,
         exclude: /node_modules/,
@@ -32,7 +35,9 @@ module.exports = {
           loader: 'babel-loader',
         },
       },
-      // scss
+      /*
+       * SCSS / CSS
+       */
       {
         test: /\.(sa|sc|c)ss$/,
         exclude: /node_modules/,
@@ -42,22 +47,24 @@ module.exports = {
             loader: 'css-loader',
             options: {
               url: false,
+              sourceMap: true,
             },
           },
           {
             loader: 'postcss-loader',
             options: {
               plugins: () => [require('autoprefixer')],
+              sourceMap: true,
             },
           },
           {
             loader: 'group-css-media-queries-loader',
-            options: { sourceMap },
           },
           {
             loader: 'sass-loader',
             options: {
               outputStyle: 'expanded',
+              sourceMap: true,
             },
           },
         ],
@@ -68,7 +75,7 @@ module.exports = {
     historyApiFallback: true,
   },
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
-  devtool: 'inline-source-map',
+  devtool: 'source-map',
   performance: {
     hints: false,
   },
