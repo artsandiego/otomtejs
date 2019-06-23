@@ -9,6 +9,11 @@ Building the web with austere simplicity. 🤖
 ![Travis(.org)](https://img.shields.io/travis/crtved/otomtejs.svg?style=flat-square) [![npm](https://img.shields.io/npm/dm/otomtejs.svg?style=flat-square)](https://npmcharts.com/compare/otomtejs) [![npm](https://img.shields.io/npm/v/otomtejs.svg?style=flat-square)](https://www.npmjs.com/package/otomtejs) [![NpmLicense](https://img.shields.io/npm/l/otomtejs.svg?style=flat-square)](https://github.com/crtved/otomtejs/blob/master/LICENSE) 
 [![install size](https://packagephobia.now.sh/badge?p=otomtejs)](https://packagephobia.now.sh/result?p=otomtejs)
 
+## Contents
+- [Getting Otomte JS](#Getting-Otomte-JS)
+- [How to use Otomte JS](#How-to-use-Otomte-JS)
+- [Otomte | WordPress](#Otomte-JS-%E2%9D%A4%EF%B8%8F-WordPress)
+- [Structure](#Structure)
 
 ## Getting Otomte JS
 You can either clone the Otomte JS from github or install using npm.
@@ -50,6 +55,7 @@ You can use Otomte JS in your WordPress website by adding it as a custom theme! 
 npm run oto:wp-setup
 ```
 ### Initialize Otomte Js on WordPress.
+><span style="color: red;">**WARNING:**</span> Once everything is set up properly and you have a WordPress website running on Otomte theme, then you <span style="color: red;">**DO NOT**</span> want to run **`npm run oto:wp-setup`**, you'll end up starting from the scratch again, and possibly break your build. You only need to run **`npm run oto:wp-setup`** <span style="color: green;">**ONCE**</span> to prevent unwanted result. 
 ```
 npm run oto:wp-dev
 ```
@@ -85,6 +91,7 @@ You will find the following files and directories under Otomte JS.
     │   └── app.scss
     └── index.html
 ```
+
 ## Thank you for using Otomte JS!
 
 💻 with ❤️ by [Art](https://dev.to/crtved)
