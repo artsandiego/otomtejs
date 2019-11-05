@@ -1,6 +1,6 @@
 {
   "name": "otomtejs",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "Building the web with austere simplicity.",
   "main": "index.js",
   "scripts": {
