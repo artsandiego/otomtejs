@@ -44,7 +44,7 @@
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
     "autoprefixer": "^9.7.6",
-    "axios": "^0.19.2",
+    "axios": "^0.21.2",
     "babel-loader": "^8.1.0",
     "bootstrap": "^4.4.1",
     "chalk": "^2.4.2",
